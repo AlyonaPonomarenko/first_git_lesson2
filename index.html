@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+
+        html,
+        body {
+            margin:0;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(29, 186, 248);
+        }
+
+        .main-container{
+            height: 322px;
+            width:500px;
+            box-sizing: border-box;
+            border: 8px solid rgb(61, 101, 125, 0.1);
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+
+        .header{
+            height:50px;
+            width:100%;
+            background-color: #dcebf9;;
+            border-bottom: 2px solid #949799;
+            border-radius: 3px 3px 0 0;
+    
+        }
+
+        .header p{
+            margin:0px;
+            text-align: center;
+            font-weight: 900;
+            color: rgb(88, 96, 99);
+            padding-top: 13px;
+        }
+
+        .inputs-container{
+            padding-top: 30px;
+            padding-left: 90px;
+            background-color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+
+        input:only-child {
+            width:300px;
+            height:30px;
+            box-sizing: border-box;
+            border: 1px solid rgb(231, 228, 228);
+            outline: 5px solid rgb(61, 101, 125, 0.1);
+            
+        }
+
+        .username-input{
+            margin-top: 20px;
+            margin-bottom: 34px;
+        }
+
+        .password-input{
+            margin-bottom: 25px;
+        }
+
+
+        ::placeholder {
+            color: rgb(193, 193, 205);
+            padding-left: 10px;
+            }
+
+
+        /* .checkbox-row{
+            display: inline-block;
+        } */
+
+        .checkbox-row input {
+            float:left;
+            margin: 5px;
+            margin-left: -5px;
+
+        }
+
+        .checkbox-row label {
+            font-size: 10px;
+            
+        }
+
+        .checkbox-row a {
+            float:right;
+            margin-right: 90px;
+            text-decoration: none;
+            color: rgb(23, 32, 92);
+            font-weight: 600;
+            font-size: 12px;
+            padding: 9px 19px;
+            background-color: rgb(162, 205, 248);
+            border-radius: 30px;
+            margin-top:-6px;
+        }
+        
+        .checkbox-row::after{
+            content:"";
+            display: table;
+            clear: both;
+
+        }
+
+        form {
+            padding-top: 20px;
+            padding-bottom: 45px;
+        }
+
+        .footer{
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: rgb(9, 111, 145);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <p>Login to Web App</p>
+        </div>
+        <div class="inputs-container">
+            <div class="username-input">
+                <input type="text" placeholder="Username or Email" required >
+            </div>
+            <div class="password-input">
+                <input type="password" placeholder="Password" required >
+            </div>
+            <div class="checkbox-row">
+                <form>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Remember me on this computer</label>
+                    <a href="#">Login</a>
+                </form>
+                
+            </div>
+            
+        </div> 
+    </div>
+    <div class="footer">
+        <p><strong>Forgot your password?</strong> Click <a href="#">here</a> to reset it.</p>
+    </div>
+</body>
+</html>
